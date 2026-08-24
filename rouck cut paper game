@@ -1,0 +1,41 @@
+import random
+
+chose = ['paper', 'cut', 'rouk']
+print("welcome to the pley")
+
+strio = str(input("pleas enter the paper or rouck or cut writ(Help)to rulse enter to skip rulse"))
+strio_random = random.choice(chose)
+
+m9h = ""
+
+if strio == 'Help':
+    print("you kone rulse")
+    m9h = str(input("pleas enter a paper or cut or rouk"))
+else:
+    m9h = strio
+
+if m9h == strio_random:
+    print(f'\n{m9h}, \n{strio_random}')
+    print("tahdel")
+elif m9h == 'paper' and strio_random == 'cut':
+    print(f'\n{m9h}, \n{strio_random}')
+    print("pc win")
+elif m9h == 'paper' and strio_random == 'rouk':
+    print(f'\n{m9h}, \n{strio_random}')    
+    print("you win")
+elif m9h == 'rouk' and strio_random == 'paper':
+    print(f'\n{m9h}, \n{strio_random}')    
+    print("pc win")
+elif m9h == 'cut' and strio_random == 'paper':
+    print(f'\n{m9h}, \n{strio_random}')
+    print("you win")
+elif m9h == 'cut' and strio_random == 'rouk':
+    print(f'\n{m9h}, \n{strio_random}')
+    print("pc win")
+elif m9h == 'rouk' and strio_random == 'cut':
+    print(f'\n{m9h}, \n{strio_random}')
+    print("you win")
+else:
+    print("invailde")
+print("Copyright (c) 2026 [Mohammad alhawri]. All rights reserved.")
+print("Licensed under the BSD 3-Clause License.")
